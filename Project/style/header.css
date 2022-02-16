@@ -6,7 +6,7 @@
     justify-content:space-between;
     align-items: center;
     letter-spacing: 0.2em;
-
+    
 }
 
 .search-section {
@@ -23,10 +23,9 @@
     padding-right: 20px;
 }
 
-.nav {
-    display: flex;
-    background-color: #fff;
-
+nav {
+    padding-right: 20px;
+    
 }
 
 ul {
@@ -37,5 +36,6 @@ ul {
 
 li {
     padding: 8px;
+    font-family:'Courier New', Courier, monospace
 }
 
