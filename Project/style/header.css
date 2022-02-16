@@ -9,27 +9,33 @@
 
 }
 
-
-
 .search-section {
-    height: 51px;
+    display: flex;
     width: 100%;
 }
 
+
+
 .logo {
     width: 20em;
-    margin: 3.5px 400.8px 8px 0;
     object-fit: contain;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .nav {
-    padding-left: 60px;
+    display: flex;
+    background-color: #fff;
 
 }
 
 ul {
     display: flex;
     list-style-type: none;
-    padding: 0;
+    padding: 0; 
+}
+
+li {
+    padding: 8px;
 }
 
