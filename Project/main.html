@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body onload="init()">
+    <header class="main-header">
+        <div class="logo"> <img src="/LOGO/LOGO.png" alt=""></div>
+        <div class="search-section">
+            <input type="search" class="search" placeholder="Search">
+        </div>
+        <nav>
+            <ul>
+                <li>Gallery</li>
+                <li>About</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-content">
+
+        <div class="canvas-container">
+            <canvas id="my-canvas" height="500px" width="500px"></canvas>
+        </div>
+        <section class="gallery">
+
+
+        </section>
+
+        <section class="editor">
+            <input oninput="setLineTxt(this.value)" type="text" placeholder="ENTER TEXT" name="text">
+            <input type="color" oninput="onSetTextColor(this.value)">
+            <button onclick="onIncreaseSize()">Increase</button>
+            <button onclick="onDecreaseSize()">Decrease</button>
+            <button onclick="onSelectLineUp()">Select Line Up</button>
+            <button onclick="onSelectLineDown()">Select Line Down</button>
+            Line: <span class="line-indicator"></span>
+        </section>
+
+
+
+    </div>
+
+
+
+    <script src="/scripts/meme.service.js"></script>
+    <script src="/scripts/meme.controller.js"></script>
+    <script src="/scripts/gallery.controller.js"></script>
+    <script src="/scripts/gallery.service.js"></script>
+</body>
+
+</html>
+
+<!-- create a global varable that shows what should be displayed  -->
+<!-- when first loading the page the variable is on "gallery"  -->
+<!-- when click on a photo - create function to change "gallery" to "editor"  -->
