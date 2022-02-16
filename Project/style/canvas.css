@@ -1,0 +1,8 @@
+.canvas-container {
+    display: flex;
+    width: 100%;
+}
+
+.my-canvas {
+    width: 100%;
+}

@@ -1,0 +1,15 @@
+.my-canvas {
+    border: 1px solid black;
+}
+
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr) ) ;
+}
+
+.main-content{
+    width: 100%;
+}
+
